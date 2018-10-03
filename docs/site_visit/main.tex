@@ -62,12 +62,12 @@
 \author{Yohanes Tsehay \\ \& Andrei Kucharavy}
 %\title{Spectral Analysis}
 \institute{Joel Bader's Lab}
-\date{10/04/2018}
+\date{CTD$^2$ site visit October 4$^{th}$ 2018}
 %\logo{\includegraphics[height=1.5cm]{hopkinslogo.jpg}}
 %\logo{\includegraphics[height=1.5cm]{ctd2_overall.png}}
 \titlegraphic{%
-   \includegraphics[width=5cm]{Hopkins_logo_2.png}\hspace*{2.75cm}~%
-   \includegraphics[width=3cm]{ctd2_overall.png}\hspace*{1.75cm}%
+   \includegraphics[width=5cm]{JHU_logo.jpg}\hspace*{2.75cm}~%
+   \includegraphics[width=2cm]{ctd2_overall.png}\hspace*{1.75cm}%
    }
 
 
@@ -330,21 +330,25 @@
 		\frametitle{Peripheral K14 explains correlates with invasive potential the best}
 		\centering
 		\resizebox{\textwidth}{!}{
-		 \begin{tabular}{||c c c c||}
+		 \begin{tabular}{||c c c c c c c||}
 			\hline
-			 & \multicolumn{3}{|c|}{$r^2$ by mouse} \\
+			 & \multicolumn{3}{|c|}{$r^2$ by mouse} & \multicolumn{3}{|c|}{$p val$ by mouse} \\ 
 			 \hline
-			 Organoids (PyMMT mice) & 	1 & 2 & 3  \\ [0.5ex]
+			 Organoids (PyMMT mice) & 	1 & 2 & 3  & 	1 & 2 & 3 \\ [0.5ex]
 			 \hline\hline
-			  \textbf{Peripheral sum K14} & \textbf{0.39} & \textbf{0.43} & \textbf{0.29} \\
+			  \textbf{Peripheral sum K14} & \textbf{0.39} & \textbf{0.43} & \textbf{0.29}
+				& \textbf{5.02e-23} & \textbf{5.72e-27} & \textbf{3.48e-17} \\
 			 \hline
-			 Centeral sum K14 & 0.21 & 0.19 & 0.11 \\
+			 Centeral sum K14 & 0.21 & 0.19 & 0.11
+				& 1.33e-11 & 3.03e-11 & 1.02e-06 \\
 			 \hline
-			 Entire sum K14 & 0.22 & 0.22 & 0.12 \\
+			 Entire sum K14 & 0.22 & 0.22 & 0.12
+				& 1.14e-12 & 1.52e-12 & 2.13e-07 \\
 			 \hline
 %			 K14 Mean & 0.02 & 0.04 & 0.03 \\ [1ex]
 %			 \hline
-			Size & 0.27 & 0.33 & 0.27 \\
+			Size & 0.27 & 0.33 & 0.27
+				& 2.08e-15 & 7.00e-20 & 3.36e-16 \\
 			 \hline
 		\end{tabular}
 		}
@@ -356,21 +360,25 @@
 		\frametitle{Peripheral K14 explains correlates with invasive potential the best}
 		\centering
 		\resizebox{\textwidth}{!}{
-		 \begin{tabular}{||c c c c c||}
+		 \begin{tabular}{||c c c c c c c c c||}
 			\hline
-			 & \multicolumn{4}{|c|}{$r^2$ by mouse} \\
+			 & \multicolumn{4}{|c|}{$r^2$ by mouse} & \multicolumn{4}{|c|}{$p val$ by mouse} \\
 			 \hline
-			 Organoids (C1tag mice) & 1 & 2 & 3 & 4  \\ [0.5ex]
+			 Organoids (C1tag mice) & 1 & 2 & 3 & 4   & 1 & 2 & 3 & 4  \\ [0.5ex]
 			 \hline\hline
-			  \textbf{Peripheral sum K14} & \textbf{0.11} & \textbf{0.25} & \textbf{0.06} & \textbf{0.03} \\
+			  \textbf{Peripheral sum K14} & \textbf{0.11} & \textbf{0.25} & 0.06 & 0.03  
+				& \textbf{1.06e-07} & \textbf{9.44e-14} & 2.42e-03 & 4.62e-02\\
 			 \hline
-			 Centeral sum K14 & 0.01 & 0.03 & 0.06 & 0.00\\
+			 Centeral sum K14 & 0.01 & 0.03 & 0.00 & 0.00 
+				& 1.57e-01 & 1.96e-02 & 4.16e-01 & 6.64e-01\\
 			 \hline
-			 Entire sum K14 & 0.01 & 0.00 & 0.01 & 0.00\\
+			 Entire sum K14 & 0.01 & 0.03 & 0.01 & 0.00 
+				& 1.05e-01 & 09.64e-03 & 3.52e-01 & 6.10e-01\\
 			 \hline
 %			 K14 Mean & 0.02 & 0.04 & 0.03 & xx\\ [1ex]
 %			 \hline
-			Size & 0.07 & 0.01 & 0.07 &  0.06\\
+			\textbf{Size} & 0.07 & 0.10 &\textbf{0.07} & \textbf{0.06} 
+				& 2.06e-05 & 6.48e-06 & \textbf{1.12e-03} &\textbf{4.57e-03}\\
 			 \hline
 		\end{tabular}
 		}
@@ -401,18 +409,28 @@
 
 \begin{frame}
  	\frametitle{Thank you!}
-	\begin{itemize}
+	\begin{columns}
+    \column{\dimexpr\paperwidth-10pt}
+    	\begin{figure}
+		\centering
+		\includegraphics[page=2, height=7cm]{TitleAckDraft.pdf}
+	\end{figure}
+  \end{columns}
+
+
+
+%	\begin{itemize}
 			% \item Mouse \#4 data seems to be slightly off, so fix it
 			% \item Establish statistical significance for our hypothesis 
-			\item Joel Bader
-			\item Joel Bader lab members
-			\newline
-			\item Andrew Ewald
-			\item Veena Padamanaban (data)
-			\item Andrew Ewald members
-			\newline
-			\item Cancer Target Discovery and Development 
-	\end{itemize}
+%			\item Joel Bader
+%			\item Joel Bader lab members
+%			\newline
+%			\item Andrew Ewald
+%			\item Veena Padamanaban (data)
+%			\item Andrew Ewald members
+%			\newline
+%			\item Cancer Target Discovery and Development 
+%	\end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
